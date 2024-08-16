@@ -1,0 +1,381 @@
+<div class="form-container">
+    <div class="d-flex align-items-center justify-content-center">
+        <h5>
+            Scheme Entry Form[<span style="color: red;"> * Mandatory Fields
+            </span>]
+        </h5>
+    </div>
+    <form id="scheme_add">
+        <div class="bg-success p-2 text-white rounded-top mb-3">
+            Ministry/Department/State Details</div>
+        <div class="mb-3">
+            <label for="scheme-list" class="lebal-form">Scheme Added To:<span class="important-star">*</span></label>
+            <select class="form-select" name="view_Select" id="Select_type">
+                <option value="0" Selected>Select Option</option>
+                <option value="CG">Ministry/Department</option>
+                <option value="SG">State</option>
+            </select>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="mb-3 scheme-ministry">
+                    <label for="scheme-list" class="lebal-form">Ministry:<span class="important-star">*</span></label>
+                    <select class="form-select" name="view_Ministry_select" id="Ministry_select">
+                        <option value="0" Selected>Select Option</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="mb-3 scheme-ministry">
+                    <label for="scheme-list" class="lebal-form">Department:<span class="important-star">*</span></label>
+                    <select class="form-select" name="view_Min_Department_select" id="Min_Department_select">
+                        <option value="0" Selected>Select Option</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="mb-3 scheme-state">
+                    <label for="scheme-list" class="lebal-form">State:<span class="important-star">*</span></label>
+                    <select class="form-select" name="view_State_ministry_select" id="State_ministry_select">
+                        <option value="0" Selected>Select Option</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="mb-3 scheme-state">
+                    <label for="scheme-list" class="lebal-form">Department:<span class="important-star">*</span></label>
+                    <select class="form-select" name="view_State_department_select" id="State_department_select">
+                        <option value="0" Selected>Select Option</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="bg-success p-2 text-white rounded-top mb-3">Scheme Details
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="mb-3">
+                    <label for="scheme-list" class="lebal-form">Scheme
+                        Name/Title:<span class="important-star">*</span></label>
+                    <input type="text" class="form-control" name="view_scheme_title" id="scheme_title">
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="mb-3">
+                    <label for="scheme-list" class="lebal-form">Scheme Short
+                        Name:<span class="important-star">*</span></label>
+                    <input type="text" class="form-control" name="view_scheme_short" id="scheme_short">
+                </div>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="scheme-code" class="lebal-form">Scheme Code:<span class="important-star">*</span></label>
+            <input type="text" class="form-control" name="view_scheme_code" id="scheme_code">
+        </div>
+        <div class="mb-3">
+            <label for="Description" class="lebal-form">Description:<span class="important-star">*</span></label>
+            <textarea class="form-control" name="view_scheme_dispt" id="scheme_dispt" rows="4"></textarea>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="mb-3">
+                    <label for="From-Date" class="lebal-form">Valid
+                        From:</label>
+                    <input type="date" class="form-control" name="view_s_from_date" id="s_from_date">
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="mb-3">
+                    <label for="To-Date" class="lebal-form">Valid To:</label>
+                    <input type="date" class="form-control" name="view_s_to_date" id="s_to_date">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="mb-3">
+                    <label for="invit_from" class="lebal-form">Applications
+                        Invited From:</label>
+                    <input type="date" class="form-control" name="view_s_invit_from" id="s_invite_from">
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="mb-3">
+                    <label for="To-Date" class="lebal-form">Applications Invited
+                        To:</label>
+                    <input type="date" class="form-control" name="view_s_invit_to" id="s_invit_to">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="mb-3">
+                    <label for="invit_from" class="lebal-form">Sponsored
+                        By:<span class="important-star">*</span></label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="view_inlineRadioOptions" id="inlineRadio1"
+                            value="option1">
+                        <label class="form-check-label" for="inlineRadio1">Central</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="view_inlineRadioOptions" id="inlineRadio2"
+                            value="option2">
+                        <label class="form-check-label" for="inlineRadio2">State</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="view_inlineRadioOptions" id="inlineRadio3"
+                            value="option3">
+                        <label class="form-check-label" for="inlineRadio3">Shared</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="mb-3">
+                    <label for="grand_provisioned" class="lebal-form">Maximum
+                        Grant Provisioned:</label>
+                    <input type="text" class="form-control" name="view_grand_provisioned" id="grand_provisioned">
+                </div>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="funding_pattern" class="lebal-form">Funding
+                Pattern:</label>
+            <textarea class="form-control" name="view_funding_pattern" id="funding_pattern" rows="4"></textarea>
+        </div>
+        <div class="bg-success p-2 text-white rounded-top mb-3">
+            Beneficiaries Details
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="mb-3">
+                    <label for="Beneficiaries" class="lebal-form">Beneficiaries:</label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">Individual</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">Family</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox3">Community</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option5">
+                        <label class="form-check-label" for="inlineCheckbox4">Women</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
+                        <label class="form-check-label" for="inlineCheckbox5">Children</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option6">
+                        <label class="form-check-label" for="inlineCheckbox6">Physically
+                            Challenged</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="option7">
+                        <label class="form-check-label" for="inlineCheckbox7">SC/ST/OBC/Minorities</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox8" value="option8">
+                        <label class="form-check-label" for="inlineCheckbox8">Senior
+                            Citizen</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox9" value="option9">
+                        <label class="form-check-label" for="inlineCheckbox9">Transgender</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox10" value="option10">
+                        <label class="form-check-label" for="inlineCheckbox10">Destitutes</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox11" value="option11">
+                        <label class="form-check-label" for="inlineCheckbox11">Any
+                            Other</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="mb-3">
+                    <label for="Benefits" class="lebal-form">Benefits:</label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox12" value="option12">
+                        <label class="form-check-label" for="inlineCheckbox12">Subsidy</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox13" value="option13">
+                        <label class="form-check-label" for="inlineCheckbox13">Training</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox14" value="option14">
+                        <label class="form-check-label" for="inlineCheckbox14">Loan</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox15" value="option15">
+                        <label class="form-check-label" for="inlineCheckbox15">Material
+                            Benefits</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox16" value="option16">
+                        <label class="form-check-label" for="inlineCheckbox16">Education</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox17" value="option17">
+                        <label class="form-check-label" for="inlineCheckbox17">Distribution
+                            of Goods</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox18" value="option18">
+                        <label class="form-check-label" for="inlineCheckbox18">Awareness
+                            Generation</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox19" value="option19">
+                        <label class="form-check-label" for="inlineCheckbox19">Any
+                            Other</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="md-3">
+                    <label for="Benefit-Details" class="lebal-form">Benefit
+                        Details:</label>
+                    <textarea class="form-control" name="view_benefit_details" id="benefit_details" rows="4"></textarea>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="mb-3">
+                    <label for="function-operation" class="lebal-form">Function
+                        Of Operation:</label>
+                    <textarea class="form-control" name="view_function_operation" id="function_operation"
+                        rows="4"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-success p-2 text-white rounded-top mb-3">Contact Person
+            Details</div>
+
+        <div class="row">
+            <div class="col-4">
+                <div class="mb-3">
+                    <label for="Name" class="lebal-form">Name:</label>
+                    <input type="text" class="form-control" name="view_name" id="name">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="mb-3">
+                    <label for="Mail Id" class="lebal-form">Mail Id:</label>
+                    <input type="text" class="form-control" name="view_Mail_Id" id="Mail_Id">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="mb-3">
+                    <label for="Mobile" class="lebal-form">Mobile:</label>
+                    <input type="text" class="form-control" name="view_Mobile" id="Mobile">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <div class="mb-3">
+                    <label for="Phone_1" class="lebal-form">Phone No 1:</label>
+                    <input type="text" class="form-control" name="view_phone_1" id="phone_1">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="mb-3">
+                    <label for="phone_1" class="lebal-form">Phone No 2:</label>
+                    <input type="text" class="form-control" name="view_phone_2" id="phone_2">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="mb-3">
+                    <label for="FAX_No" class="lebal-form">FAX No:</label>
+                    <input type="text" class="form-control" name="view_FAX_No" id="FAX_No">
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="address" class="lebal-form">Address:</label>
+            <textarea class="form-control" name="view_address" id="address" rows="4"></textarea>
+        </div>
+
+        <div class="bg-success p-2 text-white rounded-top mb-3">Eligibility and
+            How to avail</div>
+
+        <div class="row">
+            <div class="col-6">
+                <div class="mb-3">
+                    <label for="eligibility_criteria" class="lebal-form">Eligibility
+                        Criteria</label>
+                    <textarea class="form-control" name="view_eligibility_criteria" id="eligibility_criteria"
+                        rows="4"></textarea>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="mb-3">
+                    <label for="how_to_avail" class="lebal-form">How to
+                        avail</label>
+                    <textarea class="form-control" name="view_how_to_avail" id="how_to_avail" rows="4"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="mb-3">
+                    <label for="Reference_Url" class="lebal-form">Reference
+                        Url:</label>
+                    <input type="text" class="form-control" name="view_Reference_Url" id="Reference_Url">
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="mb-3">
+                    <label for="Keywords_search" class="lebal-form">Keywords
+                        separated by commas to search:</label>
+                    <input type="text" class="form-control" name="view_Keywords_search" id="Keywords_search">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="mb-3">
+                    <label for="Scrutiny" class="lebal-form">Scrutiny of
+                        proposals for this scheme will be initiated at the
+                        level:</label>
+                    <select name="view_Scrutiny_select" id="Scrutiny_select" class="form-select">
+                        <option value="0">Select Option</option>
+                        <option value="CL">Central Lavel</option>
+                        <option value="SL">State Lavel</option>
+                        <option value="DL">District Lavel</option>
+                        <option value="BL">Block Lavel</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="mb-3">
+                    <label for="scheme_guide_line" class="lebal-form">Scheme
+                        Guide Lines:</label>
+                    <input type="file" class="form-control" name="view_scheme_guide_line" id="scheme_guide_line">
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-success">Add Scheme</button>
+        <button class="btn btn-info">Cancel</button>
+    </form>
+</div>
+
+
+1. min/dep
+2. scheme 
+3. ngo 
+4. grant 
+5. finincal year
